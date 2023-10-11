@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br" className="antialiased">
       <body className={inter.className}>
-        <main className="m-auto mt-20 px-4 pb-4 md:max-w-4xl lg:max-w-6xl">
+        <main className="m-auto mt-12 px-4 pb-4 md:mt-20 md:max-w-4xl lg:max-w-6xl">
           {children}
         </main>
       </body>
