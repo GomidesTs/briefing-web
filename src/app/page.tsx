@@ -67,7 +67,7 @@ export default function Home() {
       </div>
 
       <div className="mt-8 flex justify-center">
-        <Button link="#" content="Preencher Briefing" />
+        <Button link="/business" content="Preencher Briefing" />
       </div>
     </>
   );
