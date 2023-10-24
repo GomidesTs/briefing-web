@@ -1,4 +1,4 @@
-import { Select } from './Select';
+import { Root } from './Root';
 import { SelectItem } from './SelectItem';
 
-export { Select, SelectItem };
+export { Root, SelectItem };

@@ -1,25 +1,20 @@
 'use client';
 
-import * as Select from '@radix-ui/react-select';
-import { Check } from 'lucide-react';
+import React from 'react';
 
-export type SelectItemProps = Select.SelectItemProps & {
+export type SelectItemProps = {
+  value: string;
   text: string;
 };
-
-export const SelectItem = ({ text, ...props }: SelectItemProps) => {
+export const SelectItem = ({ value, text }: SelectItemProps) => {
   return (
-    <Select.Item
-      className="flex items-center justify-between gap-2 px-3 py-2.5 outline-none"
-      {...props}
-    >
-      <Select.ItemText asChild>
-        <span className="w-full cursor-pointer text-black">{text}</span>
-      </Select.ItemText>
-
-      <Select.ItemIndicator>
-        <Check className="h-4 w-4 text-blue-500" />
-      </Select.ItemIndicator>
-    </Select.Item>
+    <>
+      <option value="" disabled hidden>
+        Selecione uma opção
+      </option>
+      <option value={value} className="text-zinc-600">
+        {text}
+      </option>
+    </>
   );
 };
